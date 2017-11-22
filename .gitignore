@@ -1,0 +1,4 @@
+
+# ignore the Docker build file
+Dockerfile
+

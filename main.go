@@ -4,24 +4,20 @@ import (
 	// "database/sql"
 	// "flag"
 	// "fmt"
-	db "github.com/kvmac/doggo/db"
-	_ "github.com/lib/pq"
 	// "os"
-)
-
-const (
-	username = "doggo"
-	password = "pupper"
-	dbname   = "doggo_db"
+	"github.com/gorilla/mux"
+	"github.com/kvmac/Doggo/server"
+	"encoding/json"
+	"time"
+	"net/http"
 )
 
 func main() {
+	server.ServeDoggo()
 
-	a := db.App{}
-	// os.Setenv()
-
-	a.Initialize(username, password, dbname)
-
-	// Args := os.Args
+	// r := mux.NewRouter()
+	// r.handle("/throw", ThrowBall)
+	// r.handle("/return", ReturnBall)
+	// http.ListenAndServe(r, ":8080")
 
 }
